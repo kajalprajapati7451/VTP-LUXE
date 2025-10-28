@@ -13,20 +13,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-     <!-- ===== Leaflet CSS ===== -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-      <!-- Navigation -->
+    <!-- Navigation -->
     <nav id="navbar">
         <div class="container-fluid">
             <div class="d-flex justify-content-between align-items-center">
-             <a href="#home" class="logo">
-    <img src="images/VTP Luxu-Light Back.jpg" alt="">
-    <span>VTP Luxe</span>
-</a>
-
+                <a href="#home" class="logo">
+                    <span>VTP Luxe</span>
+                </a>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#overview">Overview</a></li>
@@ -59,12 +57,12 @@
     <!-- Hero Section with Background Video -->
     <section class="hero" id="home">
         <video autoplay muted loop class="hero-video">
-            <source src="videos/Velvet Villas with Supers.mp4" type="video/mp4">
+            <source src="Velvet Villas with Supers.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6 hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto hero-content">
                     <h1>VTP Luxe – Velvet Villas</h1>
                     <p>43 Limited Edition Villas in a 5 Acre Gated Community</p>
                     <p class="tagline"><i class="fas fa-calendar-check me-2"></i>Possession: December 2025</p>
@@ -76,8 +74,6 @@
                             <i class="fas fa-paper-plane me-2"></i>Enquire Now
                         </a>
                     </div>
-                </div>
-                
                 </div>
             </div>
         </div>
@@ -190,7 +186,7 @@
         </div>
     </section>
 
-   <!-- Amenities Section with Gallery-Style Slider -->
+    <!-- Amenities Section with Gallery-Style Slider -->
     <section class="amenities" id="amenities">
         <div class="container">
             <div class="section-title">
@@ -352,6 +348,7 @@
             </div>
         </div>
     </section>
+
     <!-- Map Section -->
     <section class="map-section" id="map">
         <div class="container">
@@ -446,39 +443,39 @@
                         <div class="rera-qr">
                             <img src="images/13. VTP EUPHORIA - PHASE 1 ~ P52100031691.PNG" alt="RERA QR Code">
                         </div>
-                        <p class="fw-bold">RERA No: P123456789</p>
-                    </div>
-                    <div class="rera-slide">
-                        <h4>Phase 1 Registration</h4>
-                        <p>First phase of villas registration details</p>
-                        <div class="rera-qr">
-                            <img src="images/14. VTP EUPHORIA - Phase 2 ~ P52100045848.PNG" alt="RERA QR Code">
-                        </div>
-                        <p class="fw-bold">RERA No: P987654321</p>
+                        <p class="fw-bold">RERA No: P52100031691</p>
                     </div>
                     <div class="rera-slide">
                         <h4>Phase 2 Registration</h4>
                         <p>Second phase of villas registration details</p>
                         <div class="rera-qr">
-                            <img src="images/15. VTP EUPHORIA - PHASE 3 ~ P52100047312.PNG" alt="RERA QR Code">
+                            <img src="images/14. VTP EUPHORIA - Phase 2 ~ P52100045848.PNG" alt="RERA QR Code">
                         </div>
-                        <p class="fw-bold">RERA No: P456789123</p>
+                        <p class="fw-bold">RERA No: P52100045848</p>
                     </div>
                     <div class="rera-slide">
-                        <h4>Legal Compliance</h4>
-                        <p>All legal documents and approvals</p>
+                        <h4>Phase 3 Registration</h4>
+                        <p>Third phase of villas registration details</p>
+                        <div class="rera-qr">
+                            <img src="images/15. VTP EUPHORIA - PHASE 3 ~ P52100047312.PNG" alt="RERA QR Code">
+                        </div>
+                        <p class="fw-bold">RERA No: P52100047312</p>
+                    </div>
+                    <div class="rera-slide">
+                        <h4>Phase 4 Registration</h4>
+                        <p>Fourth phase of villas registration details</p>
                         <div class="rera-qr">
                             <img src="images/16. VTP EUPHORIA - PHASE 4 ~ P52100049849.PNG" alt="RERA QR Code">
                         </div>
-                        <p class="fw-bold">RERA No: P321654987</p>
+                        <p class="fw-bold">RERA No: P52100049849</p>
                     </div>
                     <div class="rera-slide">
-                        <h4>Project Approvals</h4>
-                        <p>All necessary government approvals</p>
+                        <h4>Velvet Villas Registration</h4>
+                        <p>Velvet Villas Phase 1 registration</p>
                         <div class="rera-qr">
                             <img src="images/17. VELVET VILLAS - PHASE 1 ~ P52100031829.PNG" alt="RERA QR Code">
                         </div>
-                        <p class="fw-bold">RERA No: P789123456</p>
+                        <p class="fw-bold">RERA No: P52100031829</p>
                     </div>
                 </div>
                 <button class="rera-nav rera-prev" onclick="slideRera(-1)">
@@ -501,7 +498,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="card">
-                        <div class="card-body p-5">
+                        <div class="card-body p-4">
                             <form id="contactForm">
                                 <div class="row g-3">
                                     <div class="col-md-6">
@@ -556,9 +553,39 @@
     <footer>
         <div class="container">
             <div class="row">
-                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h3 class="mb-3">VTP Luxe</h3>
+                    <p>Experience luxury living in our premium gated community with 43 limited edition villas.</p>
+                    <div class="mt-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
-            <hr class="my-4">
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#overview">Overview</a>
+                        <a href="#configurations">Villas</a>
+                        <a href="#amenities">Amenities</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="mb-3">Contact Info</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> Premium Location, City</p>
+                    <p><i class="fas fa-phone me-2"></i> +91 12345 67890</p>
+                    <p><i class="fas fa-envelope me-2"></i> info@vtpluxe.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="mb-3">Visit Us</h5>
+                    <p>Sales Office: 10:00 AM - 7:00 PM</p>
+                    <p>Monday to Sunday</p>
+                    <a href="#contact" class="btn btn-outline-light mt-2">Schedule Visit</a>
+                </div>
+            </div>
+            <hr class="my-3">
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <p class="mb-0">&copy; 2024 VTP Luxe - Velvet Villas. All rights reserved.</p>
@@ -611,8 +638,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-     <!-- Leaflet JS -->
+    <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
