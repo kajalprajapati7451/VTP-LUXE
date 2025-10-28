@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VTP Luxe - Velvet Villas | 43 Limited Edition Luxury Villas in 5 Acre Gated Community. 3 BHK & 5 BHK Villas. Possession December 2025.">
+    <meta name="keywords" content="VTP Luxe, Velvet Villas, Luxury Villas, Gated Community, Premium Villas, VTP Realty">
+    <title>VTP Luxe – Velvet Villas | Luxury Villas in 5 Acre Gated Community</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     <!-- ===== Leaflet CSS ===== -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+             <a href="#home" class="logo">
+    <img src="images/VTP Luxu-Light Back.jpg" alt="">
+    <span>VTP Luxe</span>
+</a>
+
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#configurations">Configurations</a></li>
+                    <li><a href="#amenities">Amenities</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#brochure">Brochure</a></li>
+                    <li><a href="#floor-plans">Floor Plans</a></li>
+                    <li><a href="#map">Location</a></li>
+                    <li><a href="#rera">RERA</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="mobile-menu" type="button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fixed Contact Buttons -->
+    <div class="fixed-contact">
+        <a href="https://wa.me/1234567890?text=Hi,%20I'm%20interested%20in%20VTP%20Luxe" target="_blank" class="contact-icon whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+911234567890" class="contact-icon call-btn">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+
+    <!-- Hero Section with Background Video -->
+    <section class="hero" id="home">
+        <video autoplay muted loop class="hero-video">
+            <source src="videos/Velvet Villas with Supers.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 hero-content">
+                    <h1>VTP Luxe – Velvet Villas</h1>
+                    <p>43 Limited Edition Villas in a 5 Acre Gated Community</p>
+                    <p class="tagline"><i class="fas fa-calendar-check me-2"></i>Possession: December 2025</p>
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-primary me-3 mb-3" data-bs-toggle="modal" data-bs-target="#brochureModal">
+                            <i class="fas fa-download me-2"></i>Download Brochure
+                        </a>
+                        <a href="#contact" class="btn btn-outline mb-3">
+                            <i class="fas fa-paper-plane me-2"></i>Enquire Now
+                        </a>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="overview" id="overview">
+        <div class="container">
+            <div class="section-title">
+                <h2>Project Overview</h2>
+                <p>Discover the perfect blend of luxury and comfort</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="overview-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3>05 Acres</h3>
+                        <p class="text-muted">Premium Land Parcel</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="overview-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>43 Villas</h3>
+                        <p class="text-muted">Total Units (G+1+Terrace)</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="overview-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Dec 2025</h3>
+                        <p class="text-muted">Possession Date</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Configurations -->
+    <section class="configurations" id="configurations">
+        <div class="container">
+            <div class="section-title">
+                <h2>Villa Configurations</h2>
+                <p>Choose from our exquisite villa designs</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card config-card">
+                        <h3 class="text-center">Type 1 — 3 BHK</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Plot Area:</span>
+                                <strong>2272–2984 sq.ft.</strong>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Carpet Area:</span>
+                                <strong>2164 sq.ft.</strong>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Min Garden:</span>
+                                <strong>977.47 sq.ft.</strong>
+                            </li>
+                        </ul>
+                        <div class="text-center config-price">₹5.51 Cr onwards</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card config-card">
+                        <h3 class="text-center">Type 2 — 3 BHK</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Plot Area:</span>
+                                <strong>3016 sq.ft.</strong>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Carpet Area:</span>
+                                <strong>2725 sq.ft.</strong>
+                            </li>
+                        </ul>
+                        <div class="text-center config-price">₹6.51 Cr onwards</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card config-card">
+                        <h3 class="text-center">Type 3 — 5 BHK</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Plot Area:</span>
+                                <strong>4000–5000 sq.ft.</strong>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Carpet Area:</span>
+                                <strong>3800 sq.ft.</strong>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Garden:</span>
+                                <strong>2000+ sq.ft.</strong>
+                            </li>
+                        </ul>
+                        <div class="text-center config-price">₹8.75 Cr onwards</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Amenities Section with Gallery-Style Slider -->
+    <section class="amenities" id="amenities">
+        <div class="container">
+            <div class="section-title">
+                <h2>Premium Amenities</h2>
+                <p>Experience luxury living with world-class facilities</p>
+            </div>
+            <div class="amenities-gallery-container">
+                <div class="amenities-gallery-slider" id="amenitiesGallerySlider">
+                    <!-- Swimming Pool -->
+                    <div class="amenity-gallery-slide">
+                        <img src="images/Pool View_2 .jpg" alt="Swimming Pool">
+                        <div class="amenity-name">Swimming Pool</div>
+                        <div class="amenity-gallery-overlay">
+                            <i class="fas fa-swimming-pool"></i>
+                            <h4>Swimming Pool</h4>
+                            <p>Olympic-sized pool with dedicated kids section and temperature control for year-round enjoyment.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Fitness Center -->
+                    <div class="amenity-gallery-slide">
+                        <img src="images/Open Gym.jpg" alt="Fitness Center">
+                        <div class="amenity-name">Fitness Center</div>
+                        <div class="amenity-gallery-overlay">
+                            <i class="fas fa-dumbbell"></i>
+                            <h4>Fitness Center</h4>
+                            <p>State-of-the-art gym with personal trainers, yoga studio, and dedicated spaces for various workout routines.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Landscaped Gardens -->
+                    <div class="amenity-gallery-slide">
+                        <img src="images/Day Elevation.jpg" alt="Landscaped Gardens">
+                        <div class="amenity-name">Landscaped Gardens</div>
+                        <div class="amenity-gallery-overlay">
+                            <i class="fas fa-tree"></i>
+                            <h4>Landscaped Gardens</h4>
+                            <p>Expansive green spaces with walking trails, meditation zones, and beautifully curated botanical displays.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Sports Complex -->
+                    <div class="amenity-gallery-slide">
+                        <img src="images/Basket abb copy.jpg" alt="Sports Complex">
+                        <div class="amenity-name">Sports Complex</div>
+                        <div class="amenity-gallery-overlay">
+                            <i class="fas fa-basketball-ball"></i>
+                            <h4>Sports Complex</h4>
+                            <p>Tennis, basketball & badminton courts with professional flooring and lighting for evening games.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Kids Play Area -->
+                    <div class="amenity-gallery-slide">
+                        <img src="images/Kids.jpg" alt="Kids Play Area">
+                        <div class="amenity-name">Kids Play Area</div>
+                        <div class="amenity-gallery-overlay">
+                            <i class="fas fa-child"></i>
+                            <h4>Kids Play Area</h4>
+                            <p>Safe and modern play equipment with rubberized flooring and supervised activity zones for different age groups.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Clubhouse -->
+                    <div class="amenity-gallery-slide">
+                        <img src="images/Perspective View.jpg" alt="Clubhouse">
+                        <div class="amenity-name">Luxury Clubhouse</div>
+                        <div class="amenity-gallery-overlay">
+                            <i class="fas fa-home"></i>
+                            <h4>Luxury Clubhouse</h4>
+                            <p>Spacious clubhouse with party hall, indoor games, library, and lounge areas for social gatherings.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Security -->
+                    <div class="amenity-gallery-slide">
+                        <img src="images/Boulevard Night View.jpg" alt="Security">
+                        <div class="amenity-name">24/7 Security</div>
+                        <div class="amenity-gallery-overlay">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>24/7 Security</h4>
+                            <p>Gated community with CCTV surveillance, biometric access, and round-the-clock security personnel.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Parking -->
+                    <div class="amenity-gallery-slide">
+                        <img src="images/Day Elevation.jpg" alt="Parking">
+                        <div class="amenity-name">Ample Parking</div>
+                        <div class="amenity-gallery-overlay">
+                            <i class="fas fa-car"></i>
+                            <h4>Ample Parking</h4>
+                            <p>Dedicated parking with EV charging stations and visitor parking areas for convenient vehicle management.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="amenities-gallery-nav amenities-gallery-prev" onclick="slideAmenitiesGallery(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="amenities-gallery-nav amenities-gallery-next" onclick="slideAmenitiesGallery(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Gallery</h2>
+                <p>Explore our premium villas and amenities</p>
+            </div>
+            <div class="gallery-slider-container">
+                <div class="gallery-slider" id="gallerySlider">
+                    <div class="gallery-slide">
+                        <img src="images/Balcony Night View.jpg" alt="Villa Exterior">
+                        <div class="gallery-slide-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/Villa Evening View.jpg" alt="Living Room">
+                        <div class="gallery-slide-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/VTP_PEGASUS_C02_C01.jpg" alt="Kitchen">
+                        <div class="gallery-slide-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/VTP_R10_C16.jpg" alt="Bedroom">
+                        <div class="gallery-slide-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/VTP_R10_C03.jpg" alt="Bathroom">
+                        <div class="gallery-slide-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/VTP_R10_C62 (3).jpg" alt="Swimming Pool">
+                        <div class="gallery-slide-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <button class="gallery-nav gallery-prev" onclick="slideGallery(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="gallery-nav gallery-next" onclick="slideGallery(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Map Section -->
+    <section class="map-section" id="map">
+        <div class="container">
+            <div class="section-title">
+                <h2>Prime Location</h2>
+                <p>Strategically located in the heart of the city</p>
+            </div>
+            <div class="map-container">
+                <div id="projectMap"></div>
+                <div class="map-overlay">
+                    <h3>VTP Luxe - Velvet Villas</h3>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> Premium Location, City</p>
+                    <a href="https://maps.google.com/?q=VTP+Luxe+Velvet+Villas" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-directions me-2"></i>Get Directions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brochure Section -->
+    <section class="brochure-section" id="brochure">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="brochure-card">
+                        <div class="brochure-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h2 class="mb-4">Download Our Complete Brochure</h2>
+                        <p class="mb-4">Get detailed information about VTP Luxe - Velvet Villas including floor plans, pricing, amenities, and more.</p>
+                        <button class="btn brochure-btn" data-bs-toggle="modal" data-bs-target="#brochureModal">
+                            <i class="fas fa-download me-2"></i>Download Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floor Plans -->
+    <section class="floor-plans" id="floor-plans">
+        <div class="container">
+            <div class="section-title">
+                <h2>Floor Plans</h2>
+                <p>Designed for modern living and comfort</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h4 class="mb-4">3 BHK Type A</h4>
+                            <img src="images/floorplan 1.jpg" alt="3 BHK Floor Plan" class="img-fluid rounded mb-3">
+                            <p class="text-muted">2164 sq.ft. carpet area with optimal space utilization</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h4 class="mb-4">3 BHK Type B</h4>
+                            <img src="images/floorplam2.jpg" alt="3 BHK Floor Plan" class="img-fluid rounded mb-3">
+                            <p class="text-muted">2725 sq.ft. carpet area with spacious rooms</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h4 class="mb-4">5 BHK Luxury</h4>
+                            <img src="images/floorplan3.jpg" alt="5 BHK Floor Plan" class="img-fluid rounded mb-3">
+                            <p class="text-muted">3800 sq.ft. carpet area with premium features</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RERA Section with Slider -->
+    <section class="rera" id="rera">
+        <div class="container">
+            <div class="section-title">
+                <h2>RERA Compliance</h2>
+                <p>Transparent and legally compliant project</p>
+            </div>
+            <div class="rera-slider-container">
+                <div class="rera-slider" id="reraSlider">
+                    <div class="rera-slide">
+                        <h4>Project Registration</h4>
+                        <p>VTP Luxe - Velvet Villas is registered under RERA</p>
+                        <div class="rera-qr">
+                            <img src="images/13. VTP EUPHORIA - PHASE 1 ~ P52100031691.PNG" alt="RERA QR Code">
+                        </div>
+                        <p class="fw-bold">RERA No: P123456789</p>
+                    </div>
+                    <div class="rera-slide">
+                        <h4>Phase 1 Registration</h4>
+                        <p>First phase of villas registration details</p>
+                        <div class="rera-qr">
+                            <img src="images/14. VTP EUPHORIA - Phase 2 ~ P52100045848.PNG" alt="RERA QR Code">
+                        </div>
+                        <p class="fw-bold">RERA No: P987654321</p>
+                    </div>
+                    <div class="rera-slide">
+                        <h4>Phase 2 Registration</h4>
+                        <p>Second phase of villas registration details</p>
+                        <div class="rera-qr">
+                            <img src="images/15. VTP EUPHORIA - PHASE 3 ~ P52100047312.PNG" alt="RERA QR Code">
+                        </div>
+                        <p class="fw-bold">RERA No: P456789123</p>
+                    </div>
+                    <div class="rera-slide">
+                        <h4>Legal Compliance</h4>
+                        <p>All legal documents and approvals</p>
+                        <div class="rera-qr">
+                            <img src="images/16. VTP EUPHORIA - PHASE 4 ~ P52100049849.PNG" alt="RERA QR Code">
+                        </div>
+                        <p class="fw-bold">RERA No: P321654987</p>
+                    </div>
+                    <div class="rera-slide">
+                        <h4>Project Approvals</h4>
+                        <p>All necessary government approvals</p>
+                        <div class="rera-qr">
+                            <img src="images/17. VELVET VILLAS - PHASE 1 ~ P52100031829.PNG" alt="RERA QR Code">
+                        </div>
+                        <p class="fw-bold">RERA No: P789123456</p>
+                    </div>
+                </div>
+                <button class="rera-nav rera-prev" onclick="slideRera(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="rera-nav rera-next" onclick="slideRera(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch with our sales team</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-body p-5">
+                            <form id="contactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="tel" class="form-control" id="phone" placeholder="Your Phone" required>
+                                            <label for="phone">Your Phone</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="interest" required>
+                                                <option value="">Select Villa Type</option>
+                                                <option value="3bhk">3 BHK Villa</option>
+                                                <option value="5bhk">5 BHK Villa</option>
+                                            </select>
+                                            <label for="interest">Villa Type</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" id="message" placeholder="Your Message" style="height: 120px"></textarea>
+                                            <label for="message">Your Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg">
+                                            <i class="fas fa-paper-plane me-2"></i>Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                
+                </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 VTP Luxe - Velvet Villas. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3">Privacy Policy</a>
+                    <a href="#" class="text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <div class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Brochure Modal -->
+    <div class="modal fade" id="brochureModal" tabindex="-1" aria-labelledby="brochureModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="brochureModalLabel">Download Brochure</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="brochureForm">
+                        <div class="mb-3">
+                            <label for="brochureName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="brochureName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="brochureEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="brochureEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="brochurePhone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="brochurePhone" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">
+                            <i class="fas fa-download me-2"></i>Download Brochure
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
